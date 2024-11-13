@@ -1,0 +1,9 @@
+---
+- name: Do some windows crap
+  hosts: win1
+  tasks:
+    - name: IIS is installed
+      ansible.windows.win_feature:
+        name: Web-Server
+        state: present
+
